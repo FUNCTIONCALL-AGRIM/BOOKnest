@@ -38,4 +38,3 @@ A full-stack MERN bookstore application built with modern UI and authentication 
 
 ---
 
-## 📂 Project Structure
