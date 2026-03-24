@@ -60,7 +60,7 @@ function Freebook() {
   };
   return (
     <>
-      <div className="container px-4 mx-auto  max-w-screen-2xl md:px-20">
+      <div className="container px-4 mx-auto max-w-screen-2xl md:px-20">
         <div>
           <h1 className="pb-2 text-xl font-semibold">  A Treasury of Free Reads</h1>
           <p>
@@ -73,7 +73,7 @@ function Freebook() {
         <div>
           <Slider {...settings}>
             {book.map((item) => (
-              <Cards item={item} key={item.id} />
+              <Cards item={item} key={item._id || item.id} />
             ))}
           </Slider>
         </div>
