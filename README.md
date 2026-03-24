@@ -3,6 +3,9 @@
 🚀 Live Demo:
 https://booknest-app-beta.vercel.app/
 
+📂 GitHub Repository:
+https://github.com/FUNCTIONCALL-AGRIM/BOOKnest
+
 BookNest is a full-stack MERN bookstore web application designed with a modern UI, secure authentication, and seamless user experience.
 It allows users to explore books, view free collections, and interact with a responsive and dynamic interface.
 
@@ -60,8 +63,8 @@ BookNest/
 
 1. Clone the Repository
 
-git clone https://github.com/your-username/booknest.git
-cd booknest
+git clone https://github.com/FUNCTIONCALL-AGRIM/BOOKnest.git
+cd BOOKnest
 
 --------------------------------------------------
 
@@ -126,6 +129,8 @@ Feel free to fork this repo and submit a pull request.
 👨‍💻 Author
 
 Agrim Mishra
+
+GitHub: https://github.com/FUNCTIONCALL-AGRIM
 
 - Passionate about Full Stack Development & AI
 - Building impactful tech solutions
