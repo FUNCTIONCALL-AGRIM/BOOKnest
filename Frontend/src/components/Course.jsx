@@ -7,7 +7,7 @@ function Course() {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("http://localhost:4001/book");
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/book`);
         console.log(res.data);
         setBook(res.data);
       } catch (error) {
@@ -18,9 +18,9 @@ function Course() {
   }, []);
   return (
     <>
-      <div className=" max-w-screen-2xl container mx-auto md:px-20 px-4">
-        <div className="mt-28 items-center justify-center text-center">
-          <h1 className="text-2xl  md:text-4xl">
+      <div className="container px-4 mx-auto max-w-screen-2xl md:px-20">
+        <div className="items-center justify-center text-center mt-28">
+          <h1 className="text-2xl md:text-4xl">
            Welcome, Seeker of{" "}
             <span className="text-pink-500">Knowledge:)</span>
           </h1>
@@ -30,12 +30,12 @@ function Course() {
           discovery, and growth of the mind.
           </p>
           <Link to="/">
-            <button className="mt-6 bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300">
+            <button className="px-4 py-2 mt-6 text-white duration-300 bg-pink-500 rounded-md hover:bg-pink-700">
            Return
             </button>
           </Link>
         </div>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-4">
+        <div className="grid grid-cols-1 mt-12 md:grid-cols-4">
           {book.map((item) => (
             <Cards key={item.id} item={item} />
           ))}

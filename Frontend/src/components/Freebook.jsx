@@ -12,7 +12,7 @@ function Freebook() {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("http://localhost:4001/book");
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/book`);
 
         const data = res.data.filter((data) => data.category === "Free");
         console.log(data);
@@ -60,9 +60,9 @@ function Freebook() {
   };
   return (
     <>
-      <div className=" max-w-screen-2xl container mx-auto md:px-20 px-4">
+      <div className="container px-4 mx-auto  max-w-screen-2xl md:px-20">
         <div>
-          <h1 className="font-semibold text-xl pb-2">  A Treasury of Free Reads</h1>
+          <h1 className="pb-2 text-xl font-semibold">  A Treasury of Free Reads</h1>
           <p>
             These volumes ask no coin, only thy curiosity.
           Within their pages lie lessons, stories, and wisdom
